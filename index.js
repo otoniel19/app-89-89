@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/',(req,res) => {
-  res.send("Ola mundo")
+  res.sendFile(__dirname + "/mess.html")
 })
 
 app.listen(process.env.PORT)
